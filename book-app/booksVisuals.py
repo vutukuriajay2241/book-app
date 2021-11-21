@@ -207,18 +207,14 @@ Top25YearsMostBooksPublished = rows.to_dataframe(
 
 
 @app.route("/")
-def hello_world():
+def index():
     return render_template('index.html')
 
 
 # In[ ]:
-
-
 @app.route('/Top10Authors')
 def top10Authors():
-    fig = Top10Authors.plot.bar(x='BookAuthor',y='NumBooksPublishedByAuthor',color='blue').get_figure()
-    fig.savefig('images/Top10Authors.png')
-    return render_template('images.html', name = 'Top10Authors', url ='images/Top10Authors.png')
+    return render_template('images.html', name = 'Top10Authors', url ='static/images/Top10Authors.png')
 
 
 # In[153]:
