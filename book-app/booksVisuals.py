@@ -8,7 +8,7 @@
 
 import pandas as pd 
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/vutukurisaiajay/Downloads/BG/bigdatafinalproject-332802-3d5e0d6e4c0e.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="bigdatafinalproject-332802-3d5e0d6e4c0e.json"
 
 
 
