@@ -2,4 +2,5 @@ Flask==0.12
 google-cloud-bigquery
 pyarrow
 numpy
+matplotlib
 pandas
