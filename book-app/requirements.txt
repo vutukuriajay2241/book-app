@@ -1,4 +1,4 @@
 Flask==0.12
 google-cloud-bigquery
 numpy
-pandas==1.0.5
+pandas
