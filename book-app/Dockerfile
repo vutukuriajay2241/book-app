@@ -6,6 +6,7 @@ WORKDIR /book-app
 ADD . /book-app
 # run pip to install the dependencies of the flask app
 RUN pip install Cython
+RUN pip install numpy
 
 RUN pip install -r requirements.txt
 # define the command to start the container
