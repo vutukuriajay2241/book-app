@@ -6,7 +6,7 @@ WORKDIR /book-app
 ADD . /book-app
 # run pip to install the dependencies of the flask app
 RUN pip install Cython
-
+RUN sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install --upgrade numpy
 RUN pip install -r requirements.txt
 # define the command to start the container
 CMD ["python","flask-app-visuals.py"]
