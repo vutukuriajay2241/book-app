@@ -1,5 +1,5 @@
 # init a base image (Alpine is small Linux distro)
-FROM python:latest-alpine
+FROM python-alpine
 # define the present working directory
 WORKDIR /book-app
 # copy the contents into the working dir
