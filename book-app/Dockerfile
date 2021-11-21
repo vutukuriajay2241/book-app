@@ -9,6 +9,7 @@ RUN apk update
 RUN apk add make automake gcc g++ subversion python3-dev
 RUN pip install Cython
 RUN pip install numpy
+RUN pip install markupsafe
 RUN pip install -r requirements.txt
 # define the command to start the container
 CMD ["python","flask-app-visuals.py"]
